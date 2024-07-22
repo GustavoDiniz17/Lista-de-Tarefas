@@ -1,0 +1,14 @@
+{
+  "name": "lista-de-tarefas",
+  "version": "1.0.0",
+  "description": "Projeto Para Colocar no GitHUB",
+  "main": "index.js",
+  "scripts": {
+    "star": "node index"
+  },
+  "author": "Gustavo Diniz de Morais",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
