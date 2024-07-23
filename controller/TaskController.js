@@ -42,7 +42,7 @@ const getById = async (req, res) => {
 const updateOneTask = async (req, res) => {
   try {
     const task = req.body;
-    const existingTask = await Task.findById(req.params.id);
+    task.edited = new Date(); // Marca a data da edição
     await Task.updateOne({ _id: req.params.id}, task);
     res.redirect("/");
   }catch (err) {
